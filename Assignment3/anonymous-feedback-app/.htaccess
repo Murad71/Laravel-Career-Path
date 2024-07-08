@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /
+
+
+
+# Capture the value after feedback.php and store it in a backreference
+RewriteRule ^feedback\.php/([^/]+)$ CourseAssignments/Laravel-Career-Path/Assignment3/anonymous-feedback-app/feedback.php?value=$1 [L]
+
+# If the requested file does not exist, redirect to feedback.php with the captured value
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^feedback\.php/(.+)$ CourseAssignments/Laravel-Career-Path/Assignment3/anonymous-feedback-app/feedback.php?value=$1 [L]
+
+

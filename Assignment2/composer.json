@@ -1,0 +1,16 @@
+{
+    "name": "murad/assignment2",
+    "description": "Expense Tracker",
+    "autoload": {
+        "psr-4": {
+            "ExpenseTracker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Murad71",
+            "email": "muradul.15@gmail.com"
+        }
+    ],
+    "require": {}
+}
